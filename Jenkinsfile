@@ -5,6 +5,10 @@ pipeline {
         NODE_ENV = 'test'
     }
 
+    tools {
+        nodejs 'NodeJS-16' // Assurez-vous d'avoir configuré NodeJS dans Jenkins
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -16,22 +20,22 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Node.js dependencies...'
-                sh 'npm install'
-                sh 'npx playwright install'
+                bat 'npm install'
+                bat 'npx playwright install'
             }
         }
 
         stage('Run Tests') {
             steps {
                 echo 'Running E2E tests...'
-                sh 'npx cucumber-js --tags "@e2e"'
+                bat 'npx cucumber-js --tags "@e2e" --format html:tests/reports/report.html --format json:tests/reports/report.json'
             }
         }
 
         stage('Publish Reports') {
             steps {
                 echo 'Publishing reports...'
-                archiveArtifacts artifacts: 'tests/reports/**/*.html', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'tests/reports/*.html', allowEmptyArchive: true
                 publishHTML(target: [
                     reportName: 'Cucumber HTML Report',
                     reportDir: 'tests/reports',
@@ -55,3 +59,4 @@ pipeline {
         }
     }
 }
+
