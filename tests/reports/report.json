@@ -1,0 +1,331 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "wishlist-management-on-webshop-website;add-product-to-wishlist",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Add product to wishlist",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 509764300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to webShop website",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1676310200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the Log in link",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 584677799
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "{userEmail}"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "$Z4J2ra!U98h!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203110099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click on the Log in button",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 641131199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify that I am redirected to the homepage with email '{userEmail}'",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 256265800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I add \"Black & White Diamond Heart\" to wishlist",
+            "match": {
+              "location": "tests\\steps\\e2e\\WishListSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2310711400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see \"Black & White Diamond Heart\" in wishlist",
+            "match": {
+              "location": "tests\\steps\\e2e\\WishListSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59699300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 652477999
+            },
+            "embeddings": [
+              {
+                "data": "QnJvd3NlcjpjaHJvbWl1bSBWZXJzaW9uOiAxNDMuMC43NDk5LjQ=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOjBz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wishlist",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "wishlist-management-on-webshop-website;remove-product-from-wishlist",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Remove product from wishlist",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 268414400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to webShop website",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1378308999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the Log in link",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 576936700
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "{userEmail}"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "$Z4J2ra!U98h!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192274900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click on the Log in button",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 752325699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify that I am redirected to the homepage with email '{userEmail}'",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158396300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "\"Black & White Diamond Heart\" is in wishlist",
+            "match": {
+              "location": "tests\\steps\\e2e\\WishListSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2076392700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I remove \"Black & White Diamond Heart\" from wishlist",
+            "match": {
+              "location": "tests\\steps\\e2e\\WishListSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 510939099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "wishlist should be empty",
+            "match": {
+              "location": "tests\\steps\\e2e\\WishListSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72780899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 537361399
+            },
+            "embeddings": [
+              {
+                "data": "QnJvd3NlcjpjaHJvbWl1bSBWZXJzaW9uOiAxNDMuMC43NDk5LjQ=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOjBz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wishlist",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "wishlist-management-on-webshop-website",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Wishlist management on webShop website",
+    "tags": [
+      {
+        "name": "@wishlist",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\feature\\happy-path\\e2e\\wishlist-management.feature"
+  }
+]

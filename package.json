@@ -1,0 +1,33 @@
+{
+  "name": "cucumber-ts",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://img.shields.io/github/actions/workflow/status/your-username/webshop-e2e/ci.yml?branch=main&style=flat-square&color=green)](https://github.com/your-username/webshop-e2e/actions) [![Cucumber Reports](https://img.shields.io/badge/Cucumber-Reports-blue?style=flat-square)](tests/reports/report.html) [![Playwright](https://img.shields.io/badge/Playwright-v1.40.0-brightgreen?style=flat-square)](https://playwright.dev/) [![TypeScript](https://img.shields.io/badge/TypeScript-v5.0-blue?style=flat-square)](https://www.typescriptlang.org/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --config cucumber.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.4.0",
+    "@playwright/test": "^1.57.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.14.2",
+    "@types/pg": "^8.16.0",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.5",
+    "pixelmatch": "^6.0.0",
+    "pngjs": "^7.0.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "pg": "^8.16.3"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "type": "commonjs"
+}
